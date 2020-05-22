@@ -23,7 +23,7 @@ theme: lnzu
 npm i -S hexo-prism-plugin
 ```
 在hexo根目录下的**_config.yml**下修改
-```
+```yaml
 highlight:
   enable: false
   line_number: false
