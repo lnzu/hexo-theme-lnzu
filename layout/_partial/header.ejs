@@ -14,11 +14,12 @@
   <!--如果是文章显示页面关闭网站描述-->
   <% if (is_post() == false) { %>
     <!--网站描述-->
-    <p><%- config.description %></p>
+    <p id="discription"><%- config.description %></p>
+    <!--是否开启网站的描述打字-->
+    <% if ( theme.typing ) { %>
+      <%- js('js/typing.js') %>
+    <% } %>
     <hr/>
   <% } %>
- 
+   
 </header>
-
-<style>
-</style>

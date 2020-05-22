@@ -7,4 +7,9 @@
   <%- js('js/jquery.min.js') %>
   <%- js('js/clipboard.js') %>
   <%- js('js/main.js') %>
+  
+  <% if ( theme.click_show_text ) { %>
+    <%- js('js/click_show_text.js') %>
+  <% } %>
+  
 </head>

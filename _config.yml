@@ -1,9 +1,16 @@
 #主题风格样式 light dark
 colorscheme: light
 
+#菜单栏配置
 menu:
   home: /
   about: /about/
   search: /search
   tags: /tags
   categories: /categories
+
+#网站描述是否开启打字
+typing: true
+
+#点击屏幕出现文字，自定义文字请打开js/click_show_text.js第六行修改
+click_show_text: true
