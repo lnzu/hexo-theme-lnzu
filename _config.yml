@@ -1,0 +1,9 @@
+#主题风格样式 light dark
+colorscheme: light
+
+menu:
+  home: /
+  about: /about/
+  search: /search
+  tags: /tags
+  categories: /categories

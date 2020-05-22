@@ -1,0 +1,29 @@
+<div class="page">
+  <% if (page.type === "search") { %>
+    <%- js('js/search.js') %>
+    <section>
+      <h1>站内搜索</h1>
+      <div id="site_search">
+      <input class="search-input" type="text" id="local-search-input" results="0"/>
+      <div id="local-search-result"></div>
+      </div>
+    </section>
+  <% } else if (page.type === "tags") { %>
+    <h1>标签云</h1>
+    <%- tagcloud({
+      min_font: 12, 
+      max_font: 30, 
+      amount: 300
+    }) %>
+    
+  <% } else if (page.type === "categories") { %>
+    <h1>分类</h1>
+    <%- list_categories({
+      show_count: true
+    }) %>
+    
+  <% } else if (page.type === "about") { %>
+    <h1>关于</h1>
+  <% } %>
+  
+</div>
